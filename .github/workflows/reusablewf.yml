@@ -16,7 +16,7 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-    - name: Print the Names
-      run: |      
-        echo "Hello ${{ inputs.firstName }}"
-        # echo "Hello ${{ inputs.secondName }}"
+      - name: Print the Names
+        run: |      
+          echo "Hello ${{ inputs.firstName }}"
+          # echo "Hello ${{ inputs.secondName }}"
