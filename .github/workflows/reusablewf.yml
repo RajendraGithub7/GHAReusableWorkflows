@@ -1,6 +1,6 @@
 name: Reusable_Workflow
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       firstName:
         description: 'Name of the First person'
