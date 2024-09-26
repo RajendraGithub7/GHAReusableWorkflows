@@ -7,11 +7,11 @@ on:
         default: 'Matt'
         required: true
         type: string
-      secondName:
-        description: 'Name of the Second person'
-        default: 'John'
-        required: false
-        type: string
+      # secondName:
+      #   description: 'Name of the Second person'
+      #   default: 'John'
+      #   required: false
+      #   type: string
 jobs:
   greet:
     runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ jobs:
     - name: Print the Names
       run: |      
         echo "Hello ${{ inputs.firstName }}"
-        echo "Hello ${{ inputs.secondName }}"
+        # echo "Hello ${{ inputs.secondName }}"
