@@ -1,0 +1,22 @@
+name: Reusable_Workflow
+on:
+  workflow_call:
+    inputs:
+      firstName:
+        description: 'Name of the First person'
+        default: 'Matt'
+        required: true
+        type: string
+      secondName:
+        description: 'Name of the Second person'
+        default: 'John'
+        required: false
+        type: string
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print the Names
+      run: |      
+        echo "Hello ${{ inputs.firstName }}"
+        echo "Hello ${{ inputs.secondName }}"
